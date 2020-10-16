@@ -102,10 +102,10 @@ namespace WPF_Indicator_Light.UserControls
         {
             Dispatcher.Invoke(new Action(() =>
             {
-                label1.Foreground = StopColor;
-                label2.Foreground = StopColor;
-                label3.Foreground = StopColor;
-                label4.Foreground = StopColor;
+                Dot1.Background = StopColor;
+                Dot2.Background = StopColor;
+                Dot3.Background = StopColor;
+                Dot4.Background = StopColor;
             }), System.Windows.Threading.DispatcherPriority.ApplicationIdle);
         }
 
@@ -120,31 +120,31 @@ namespace WPF_Indicator_Light.UserControls
                 switch (_dotloop)
                 {
                     case 1:
-                        label1.Foreground = RunningColorLight;
-                        label2.Foreground = RunningColorDark;
-                        label3.Foreground = RunningColorDark;
-                        label4.Foreground = RunningColorDark;
+                        Dot1.Background = RunningColorLight;
+                        Dot2.Background = RunningColorDark;
+                        Dot3.Background = RunningColorDark;
+                        Dot4.Background = RunningColorDark;
                         _dotloop++;
                         break;
                     case 2:
-                        label1.Foreground = RunningColorDark;
-                        label2.Foreground = RunningColorLight;
-                        label3.Foreground = RunningColorDark;
-                        label4.Foreground = RunningColorDark;
+                        Dot1.Background = RunningColorDark;
+                        Dot2.Background = RunningColorLight;
+                        Dot3.Background = RunningColorDark;
+                        Dot4.Background = RunningColorDark;
                         _dotloop++;
                         break;
                     case 3:
-                        label1.Foreground = RunningColorDark;
-                        label2.Foreground = RunningColorDark;
-                        label3.Foreground = RunningColorLight;
-                        label4.Foreground = RunningColorDark;
+                        Dot1.Background = RunningColorDark;
+                        Dot2.Background = RunningColorDark;
+                        Dot3.Background = RunningColorLight;
+                        Dot4.Background = RunningColorDark;
                         _dotloop++;
                         break;
                     case 4:
-                        label1.Foreground = RunningColorDark;
-                        label2.Foreground = RunningColorDark;
-                        label3.Foreground = RunningColorDark;
-                        label4.Foreground = RunningColorLight;
+                        Dot1.Background = RunningColorDark;
+                        Dot2.Background = RunningColorDark;
+                        Dot3.Background = RunningColorDark;
+                        Dot4.Background = RunningColorLight;
                         _dotloop = 1;
                         break;
                 }
@@ -157,17 +157,17 @@ namespace WPF_Indicator_Light.UserControls
             {
                 if (_isInterval)
                 {
-                    label1.Foreground = WarningColor;
-                    label2.Foreground = WarningColor;
-                    label3.Foreground = WarningColor;
-                    label4.Foreground = WarningColor;
+                    Dot1.Background = WarningColor;
+                    Dot2.Background = WarningColor;
+                    Dot3.Background = WarningColor;
+                    Dot4.Background = WarningColor;
                 }
                 else
                 {
-                    label1.Foreground = StopColor;
-                    label2.Foreground = StopColor;
-                    label3.Foreground = StopColor;
-                    label4.Foreground = StopColor;
+                    Dot1.Background = StopColor;
+                    Dot2.Background = StopColor;
+                    Dot3.Background = StopColor;
+                    Dot4.Background = StopColor;
                 }
                 _isInterval = !_isInterval;
 
@@ -180,17 +180,17 @@ namespace WPF_Indicator_Light.UserControls
             {
                 if (_isInterval)
                 {
-                    label1.Foreground = ErrorColor;
-                    label2.Foreground = ErrorColor;
-                    label3.Foreground = ErrorColor;
-                    label4.Foreground = ErrorColor;
+                    Dot1.Background = ErrorColor;
+                    Dot2.Background = ErrorColor;
+                    Dot3.Background = ErrorColor;
+                    Dot4.Background = ErrorColor;
                 }
                 else
                 {
-                    label1.Foreground = StopColor;
-                    label2.Foreground = StopColor;
-                    label3.Foreground = StopColor;
-                    label4.Foreground = StopColor;
+                    Dot1.Background = StopColor;
+                    Dot2.Background = StopColor;
+                    Dot3.Background = StopColor;
+                    Dot4.Background = StopColor;
                 }
                 _isInterval = !_isInterval;
 
@@ -202,17 +202,17 @@ namespace WPF_Indicator_Light.UserControls
             {
                 if (_isInterval)
                 {
-                    label1.Foreground = FatalColor;
-                    label2.Foreground = FatalColor;
-                    label3.Foreground = FatalColor;
-                    label4.Foreground = FatalColor;
+                    Dot1.Background = FatalColor;
+                    Dot2.Background = FatalColor;
+                    Dot3.Background = FatalColor;
+                    Dot4.Background = FatalColor;
                 }
                 else
                 {
-                    label1.Foreground = StopColor;
-                    label2.Foreground = StopColor;
-                    label3.Foreground = StopColor;
-                    label4.Foreground = StopColor;
+                    Dot1.Background = StopColor;
+                    Dot2.Background = StopColor;
+                    Dot3.Background = StopColor;
+                    Dot4.Background = StopColor;
                 }
                 _isInterval = !_isInterval;
 

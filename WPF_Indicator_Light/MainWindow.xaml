@@ -17,6 +17,8 @@
         </Grid.RowDefinitions>
         <usercontrols:IndicatorLight
             x:Name="indicatorLight"
+            Width="100"
+            Height="15"
             HorizontalAlignment="Center"
             Light="Stop" />
         <StackPanel

@@ -5,21 +5,47 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:WPF_Indicator_Light.UserControls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    d:DesignHeight="25"
-    d:DesignWidth="75"
+    d:DesignHeight="40"
+    d:DesignWidth="175"
     mc:Ignorable="d">
-    <StackPanel Orientation="Horizontal">
-        <Viewbox>
-            <Label Name="label1" Content="●" />
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Viewbox Grid.Column="0">
+            <Border
+                Name="Dot1"
+                Width="40"
+                Height="40"
+                Background="LightGray"
+                CornerRadius="20" />
         </Viewbox>
-        <Viewbox>
-            <Label Name="label2" Content="●" />
+        <Viewbox Grid.Column="1">
+            <Border
+                Name="Dot2"
+                Width="40"
+                Height="40"
+                Background="LightGray"
+                CornerRadius="20" />
         </Viewbox>
-        <Viewbox>
-            <Label Name="label3" Content="●" />
+        <Viewbox Grid.Column="2">
+            <Border
+                Name="Dot3"
+                Width="40"
+                Height="40"
+                Background="LightGray"
+                CornerRadius="20" />
         </Viewbox>
-        <Viewbox>
-            <Label Name="label4" Content="●" />
+        <Viewbox Grid.Column="3">
+            <Border
+                Name="Dot4"
+                Width="40"
+                Height="40"
+                Background="LightGray"
+                CornerRadius="20" />
         </Viewbox>
-    </StackPanel>
+    </Grid>
 </UserControl>
