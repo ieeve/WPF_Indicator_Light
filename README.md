@@ -27,3 +27,5 @@ github地址：[https://github.com/ieeve/WPF\_Indicator\_Light](https://github.c
 **设计要点：**
 
 使用Border做了一个圆形，然后在外面包了一个ViewBox，使控件可以自由缩放。
+
+**可以随手给个星星啊**
