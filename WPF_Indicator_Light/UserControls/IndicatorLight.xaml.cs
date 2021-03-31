@@ -22,7 +22,15 @@ namespace WPF_Indicator_Light.UserControls
     {
         private IndicatorType _IndicatorType = IndicatorType.Stop;
         [System.ComponentModel.Description("指示灯类别")]
-        public IndicatorType Light { get => _IndicatorType; set => Draw(value); }
+        public IndicatorType LightType
+        {
+            get => _IndicatorType;
+            set
+            {
+                if (_IndicatorType != value)
+                    Draw(value);
+            }
+        }
 
         private Brush StopColor = new SolidColorBrush(Colors.LightGray);
 
