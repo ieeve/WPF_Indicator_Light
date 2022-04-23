@@ -27,27 +27,27 @@ namespace WPF_Indicator_Light
 
         private void stop_Click(object sender, RoutedEventArgs e)
         {
-            this.indicatorLight.Light = UserControls.IndicatorType.Stop;
+            this.indicatorLight.LightType = UserControls.IndicatorType.Stop;
         }
 
         private void start_Click(object sender, RoutedEventArgs e)
         {
-            this.indicatorLight.Light = UserControls.IndicatorType.Start;
+            this.indicatorLight.LightType = UserControls.IndicatorType.Start;
         }
 
         private void wranning_Click(object sender, RoutedEventArgs e)
         {
-            this.indicatorLight.Light = UserControls.IndicatorType.Warning;
+            this.indicatorLight.LightType = UserControls.IndicatorType.Warning;
         }
 
         private void error_Click(object sender, RoutedEventArgs e)
         {
-            this.indicatorLight.Light = UserControls.IndicatorType.Error;
+            this.indicatorLight.LightType = UserControls.IndicatorType.Error;
         }
 
         private void Fatal_Click(object sender, RoutedEventArgs e)
         {
-            this.indicatorLight.Light = UserControls.IndicatorType.Fatal;
+            this.indicatorLight.LightType = UserControls.IndicatorType.Fatal;
         }
     }
 }
