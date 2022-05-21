@@ -31,6 +31,22 @@ namespace WPF_Indicator_Light.UserControls
                     Draw(value);
             }
         }
+        //MVVM Binding 
+        public static readonly DependencyProperty BindLightTypeProperty = DependencyProperty.Register("BindLightType", typeof(IndicatorType), typeof(IndicatorLight), new PropertyMetadata(IndicatorType.Stop, new PropertyChangedCallback(OnTextChanged)));
+        public IndicatorType BindLightType
+        {
+            get { return (IndicatorType)GetValue(BindLightTypeProperty); }
+            set { SetValue(BindLightTypeProperty, value); }
+        }
+        static void OnTextChanged(object sender, DependencyPropertyChangedEventArgs args)
+        {
+            IndicatorLight source = (IndicatorLight)sender;
+            var value = (IndicatorType)args.NewValue;
+            if (source._IndicatorType != value)
+            {
+                source.Draw(value);
+            }
+        }
 
         private Brush StopColor = new SolidColorBrush(Colors.LightGray);
 
